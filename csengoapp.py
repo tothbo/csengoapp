@@ -110,32 +110,6 @@ def main():
     # Beütemezés
     for i, ido in enumerate(["07:45", "08:30", "08:40", "09:25", "09:35", "10:20", "10:30", "11:15", "11:25", "12:10", "12:30", "13:15", "13:25", "14:10", "14:20", "15:05"]):
         schedule.every().day.at(ido).do(task, oraszam=i).tag('ertesites')
-    #
-    #   |
-    #   | e helyett
-    #   V
-    #   Ha egyetértesz Boti akkor kitörölheted, ha nem rakd vissza
-    #
-    # if(runtime == True):
-    #     schedule.every().day.at("07:45").do(task, 1).tag('ertesites')
-    #     schedule.every().day.at("08:30").do(task, 2).tag('ertesites')
-    #     schedule.every().day.at("08:40").do(task, 3).tag('ertesites')
-    #     schedule.every().day.at("09:25").do(task, 4).tag('ertesites')
-    #     schedule.every().day.at("09:35").do(task, 5).tag('ertesites')
-    #     schedule.every().day.at("10:20").do(task, 6).tag('ertesites')
-    #     schedule.every().day.at("10:30").do(task, 7).tag('ertesites')
-    #     schedule.every().day.at("11:15").do(task, 8).tag('ertesites')
-    #     schedule.every().day.at("11:25").do(task, 9).tag('ertesites')
-    #     schedule.every().day.at("12:10").do(task, 10).tag('ertesites')
-    #     schedule.every().day.at("12:46").do(task, 11).tag('ertesites')
-    #     schedule.every().day.at("13:15").do(task, 12).tag('ertesites')
-    #     schedule.every().day.at("13:25").do(task, 13).tag('ertesites')
-    #     schedule.every().day.at("14:10").do(task, 14).tag('ertesites')
-    #     schedule.every().day.at("14:20").do(task, 15).tag('ertesites')
-    #     schedule.every().day.at("15:05").do(task, 16).tag('ertesites')
-    #     schedule.every().day.at("15:06").do(task, 17).tag('ertesites')
-
-    # print(schedule.jobs)
 
     while runtime == True:
         schedule.run_pending()
