@@ -5,7 +5,6 @@ from time import strftime
 import schedule
 from playsound import playsound
 import calendar
-import datetime
 import os.path
 
 toaster = ToastNotifier()
