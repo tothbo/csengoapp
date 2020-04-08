@@ -110,7 +110,7 @@ def main():
     # Beütemezés
     for i, ido in enumerate(["07:45", "08:30", "08:40", "09:25", "09:35", "10:20", "10:30", "11:15", "11:25", "12:10", "12:30", "13:15", "13:25", "14:10", "14:20", "15:05"]):
         schedule.every().day.at(ido).do(task, oraszam=i).tag('ertesites')
-
+        
     while runtime == True:
         schedule.run_pending()
         time.sleep(1)
