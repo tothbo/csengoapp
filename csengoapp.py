@@ -85,6 +85,7 @@ def task(oraszam):
         toaster.show_toast("8. ➡ 📕", "A pontos idő: 15:05")
         csongo(2)
         print("Siker!")
+        exit()
     else:
         schedule.clear('ertesites')
 
