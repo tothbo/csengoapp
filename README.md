@@ -22,3 +22,4 @@ Szükséges csomagok a requirements.txt-ben mellékelve.
 4. Indítsd el a csengoapp.py-t, és már menni is fog :)
 
 Minden jog fenntartva, még az is ami nem létezik.
+#csengoapp, #csengoappsquad
