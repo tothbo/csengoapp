@@ -9,6 +9,16 @@ import os.path
 
 toaster = ToastNotifier()
 
+file = open('timetable.txt', 'r')
+times = file.readlines()
+adatbazis = []
+
+for x in times:
+    a = x.rstrip("\n")
+    adatbazis.append(a)
+
+print(a)
+
 def csongo(beki):
     if(os.path.exists("kicsongo.mp3") == True or os.path.exists("becsongo.mp3") == True):
         if(beki == 1):
@@ -26,7 +36,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 1):
-        toaster.show_toast("1. ➡ 📕", "A pontos idő: 8:30")
+        toaster.show_toast("1. ➡ 📕", "A pontos idő: 8:25")
         csongo(2)
         print("Siker!")
     elif(oraszam == 2):
@@ -34,7 +44,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 3):
-        toaster.show_toast("2. ➡ 📕", "A pontos idő: 9:25")
+        toaster.show_toast("2. ➡ 📕", "A pontos idő: 9:20")
         csongo(2)
         print("Siker!")
     elif(oraszam == 4):
@@ -42,7 +52,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 5):
-        toaster.show_toast("3. ➡ 📕", "A pontos idő: 10:20")
+        toaster.show_toast("3. ➡ 📕", "A pontos idő: 10:15")
         csongo(2)
         print("Siker!")
     elif(oraszam == 6):
@@ -50,7 +60,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 7):
-        toaster.show_toast("4. ➡ 📕", "A pontos idő: 11:15")
+        toaster.show_toast("4. ➡ 📕", "A pontos idő: 11:10")
         csongo(2)
         print("Siker!")
     elif(oraszam == 8):
@@ -58,7 +68,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 9):
-        toaster.show_toast("5. ➡ 📕", "A pontos idő: 12:10")
+        toaster.show_toast("5. ➡ 📕", "A pontos idő: 12:05")
         csongo(2)
         print("Siker!")
     elif(oraszam == 10):
@@ -66,7 +76,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 11):
-        toaster.show_toast("6. ➡ 📕", "A pontos idő: 13:15")
+        toaster.show_toast("6. ➡ 📕", "A pontos idő: 13:10")
         csongo(2)
         print("Siker!")
     elif(oraszam == 12):
@@ -74,7 +84,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 13):
-        toaster.show_toast("7. ➡ 📕", "A pontos idő: 14:10")
+        toaster.show_toast("7. ➡ 📕", "A pontos idő: 14:05")
         csongo(2)
         print("Siker!")
     elif(oraszam == 14):
@@ -82,7 +92,7 @@ def task(oraszam):
         csongo(1)
         print("Siker!")
     elif(oraszam == 15):
-        toaster.show_toast("8. ➡ 📕", "A pontos idő: 15:05")
+        toaster.show_toast("8. ➡ 📕", "A pontos idő: 15:00")
         csongo(2)
         print("Siker!")
         exit()
@@ -108,7 +118,7 @@ def main():
         toaster.show_toast("Csengő", csengo_start, duration=5, threaded=True)
 
     # Beütemezés
-    for i, ido in enumerate(["07:45", "08:30", "08:40", "09:25", "09:35", "10:20", "10:30", "11:15", "11:25", "12:10", "12:30", "13:15", "13:25", "14:10", "14:20", "15:05"]):
+    for i, ido in enumerate(["07:45", "08:25", "08:40", "09:20", "09:35", "10:15", "10:30", "11:10", "11:25", "12:05", "12:30", "13:10", "13:25", "14:05", "14:20", "15:00"]):
         schedule.every().day.at(ido).do(task, oraszam=i).tag('ertesites')
         
     while runtime == True:
