@@ -6,6 +6,7 @@ import schedule
 from playsound import playsound
 import calendar
 import os.path
+import sys
 
 file = open('timetable.txt', 'r')
 times = file.readlines()
@@ -204,10 +205,10 @@ def task(oraszam):
         )
         csongo(2)
         print("Siker!")
-        exit()
+        sys.exit()
     else:
         schedule.clear('ertesites')
-        exit()
+        sys.exit()
 
 
 def main():
