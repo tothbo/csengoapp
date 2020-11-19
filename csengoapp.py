@@ -32,7 +32,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 1.',
             message='Becsengettek az első órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -43,7 +43,7 @@ def task(oraszam):
         notification.notify(
             title='1. ➡ 📕',
             message='Véget ért az első óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -54,7 +54,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 2.',
             message='Becsengettek a második órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -65,7 +65,7 @@ def task(oraszam):
         notification.notify(
             title='2. ➡ 📕',
             message='Véget ért a második óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -76,7 +76,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 3.',
             message='Becsengettek a harmadik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -87,7 +87,7 @@ def task(oraszam):
         notification.notify(
             title='3. ➡ 📕',
             message='Véget ért a harmadik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -98,7 +98,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 4.',
             message='Becsengettek a negyedik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -109,7 +109,7 @@ def task(oraszam):
         notification.notify(
             title='4. ➡ 📕',
             message='Véget ért a negyedik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -120,7 +120,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 5.',
             message='Becsengettek az ötödik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -131,7 +131,7 @@ def task(oraszam):
         notification.notify(
             title='5. ➡ 📕',
             message='Véget ért az ötödik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -142,7 +142,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 6.',
             message='Becsengettek a hatodik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -153,7 +153,7 @@ def task(oraszam):
         notification.notify(
             title='6. ➡ 📕',
             message='Véget ért a hatodik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -164,7 +164,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 7.',
             message='Becsengettek a hetedik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -175,7 +175,7 @@ def task(oraszam):
         notification.notify(
             title='7. ➡ 📕',
             message='Véget ért a hetedik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -186,7 +186,7 @@ def task(oraszam):
         notification.notify(
             title='🔔 ➡ 8.',
             message='Becsengettek a nyolcadik órára',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -197,7 +197,7 @@ def task(oraszam):
         notification.notify(
             title='8. ➡ 📕',
             message='Véget ért a nyolcadik óra',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -207,6 +207,7 @@ def task(oraszam):
         exit()
     else:
         schedule.clear('ertesites')
+        exit()
 
 
 def main():
@@ -217,7 +218,7 @@ def main():
         notification.notify(
             title='🔕 ➡ Ma nincsenek órák',
             message='Élvezd a hétvége nyugalmát :)',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -227,7 +228,7 @@ def main():
         notification.notify(
             title='🔕 ➡ Véget ért az összes óra',
             message='Élvezd a délután nyugalmát :)',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
@@ -238,7 +239,7 @@ def main():
         notification.notify(
             title='🛎️ ➡ Csengőapp mostantól aktív',
             message='Innentől értesítéseket fogsz kapni az órarendnek megfelelően!',
-            app_name='Csengőapp',
+            app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
             toast=False,
