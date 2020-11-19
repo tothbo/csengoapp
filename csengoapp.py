@@ -1,4 +1,4 @@
-from win10toast import ToastNotifier
+from plyer import notification
 import time
 import datetime
 from time import strftime
@@ -6,8 +6,6 @@ import schedule
 from playsound import playsound
 import calendar
 import os.path
-
-toaster = ToastNotifier()
 
 file = open('timetable.txt', 'r')
 times = file.readlines()
@@ -32,67 +30,147 @@ def csongo(beki):
 def task(oraszam):
     print("Ertesites es hang kuldese folyamatban...")
     if(oraszam == 0):
-        toaster.show_toast("🔔 ➡ 1.", "A pontos idő: " + adatbazis[0])
+        notification.notify(
+            title='🔔 ➡ 1.',
+            message='Becsengettek az első órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 1):
-        toaster.show_toast("1. ➡ 📕", "A pontos idő: " + adatbazis[1])
+        notification.notify(
+            title='1. ➡ 📕',
+            message='Véget ért az első óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 2):
-        toaster.show_toast("🔔 ➡ 2.", "A pontos idő: " + adatbazis[2])
+        notification.notify(
+            title='🔔 ➡ 2.',
+            message='Becsengettek a második órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 3):
-        toaster.show_toast("2. ➡ 📕", "A pontos idő: " + adatbazis[3])
+        notification.notify(
+            title='2. ➡ 📕',
+            message='Véget ért a második óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 4):
-        toaster.show_toast("🔔 ➡ 3.", "A pontos idő: " + adatbazis[4])
+        notification.notify(
+            title='🔔 ➡ 3.',
+            message='Becsengettek a harmadik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 5):
-        toaster.show_toast("3. ➡ 📕", "A pontos idő: " + adatbazis[5])
+        notification.notify(
+            title='3. ➡ 📕',
+            message='Véget ért a harmadik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 6):
-        toaster.show_toast("🔔 ➡ 4.", "A pontos idő: " + adatbazis[6])
+        notification.notify(
+            title='🔔 ➡ 4.',
+            message='Becsengettek a negyedik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 7):
-        toaster.show_toast("4. ➡ 📕", "A pontos idő: " + adatbazis[7])
+        notification.notify(
+            title='1. ➡ 📕',
+            message='Véget ért a negyedik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 8):
-        toaster.show_toast("🔔 ➡ 5.", "A pontos idő: " + adatbazis[8])
+        notification.notify(
+            title='🔔 ➡ 5.',
+            message='Becsengettek az ötödik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 9):
-        toaster.show_toast("5. ➡ 📕", "A pontos idő: " + adatbazis[9])
+        notification.notify(
+            title='5. ➡ 📕',
+            message='Véget ért az ötödik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 10):
-        toaster.show_toast("🔔 ➡ 6.", "A pontos idő: " + adatbazis[10])
+        notification.notify(
+            title='🔔 ➡ 6.',
+            message='Becsengettek a hatodik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 11):
-        toaster.show_toast("6. ➡ 📕", "A pontos idő: " + adatbazis[11])
+        notification.notify(
+            title='6. ➡ 📕',
+            message='Véget ért a hatodik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 12):
-        toaster.show_toast("🔔 ➡ 7.", "A pontos idő: " + adatbazis[12])
+        notification.notify(
+            title='🔔 ➡ 7.',
+            message='Becsengettek a hatodik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 13):
-        toaster.show_toast("7. ➡ 📕", "A pontos idő: " + adatbazis[13])
+        notification.notify(
+            title='7. ➡ 📕',
+            message='Véget ért a hetedik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
     elif(oraszam == 14):
-        toaster.show_toast("🔔 ➡ 8.", "A pontos idő: " + adatbazis[14])
+        notification.notify(
+            title='🔔 ➡ 8.',
+            message='Becsengettek a nyolcadik órára',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(1)
         print("Siker!")
     elif(oraszam == 15):
-        toaster.show_toast("8. ➡ 📕", "A pontos idő: " + adatbazis[15])
+        notification.notify(
+            title='8. ➡ 📕',
+            message='Véget ért a nyolcadik óra',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         csongo(2)
         print("Siker!")
         exit()
@@ -102,20 +180,32 @@ def task(oraszam):
 
 def main():
     x = datetime.datetime.now()
-    csengo_start = "A csengő app mostantól aktív!"
     print("Started")
     print("List of scheduled jobs:")
     if(calendar.weekday(x.year, x.month, x.day) >= 5):
-        toaster.show_toast(
-            "Ma nincsenek órák!", "Élvezd a hétvége nyugalmát :)", duration=5, threaded=True)
+        notification.notify(
+            title='🔕 ➡ Ma nincsenek órák',
+            message='Élvezd a hétvége nyugalmát :)',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         runtime = False
-    elif(strftime("%H:%M") >= "15:06"):
-        toaster.show_toast(
-            "Ma nincs több órád!", "Élvezd a délután nyugalmát :)", duration=5, threaded=True)
+    elif(strftime("%H:%M") >= "15:01"):
+        notification.notify(
+            title='🔕 ➡ Véget ért az összes óra',
+            message='Élvezd a délután nyugalmát :)',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
         runtime = False
     else:
         runtime = True
-        toaster.show_toast("Csengő", csengo_start, duration=5, threaded=True)
+        notification.notify(
+            title='🛎️ ➡ Csengőapp mostantól aktív',
+            message='Innentől értesítéseket fogsz kapni az órarendnek megfelelően!',
+            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
+            timeout=10,  # seconds
+        )
 
     # Beütemezés
     for i, ido in enumerate(adatbazis):
