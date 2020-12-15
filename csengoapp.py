@@ -29,10 +29,12 @@ def csongo(beki):
 
 def task(oraszam):
     print("Ertesites es hang kuldese folyamatban...")
-    if(oraszam == 0):
+    # Páros
+    if((oraszam % 2) == 0):
+        cosz = int(((oraszam) / 2) + 1)
         notification.notify(
-            title='🔔 ➡ 1.',
-            message='Becsengettek az első órára',
+            title='🔔 ➡ ' + str(cosz) + '.',
+            message='Becsengettek az órára',
             app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
@@ -40,10 +42,12 @@ def task(oraszam):
         )
         csongo(1)
         print("Siker!")
-    elif(oraszam == 1):
+    # Páratlan
+    elif((oraszam % 2) != 0):
+        cosz = int(((oraszam) / 2) + 0.5)
         notification.notify(
-            title='1. ➡ 📕',
-            message='Véget ért az első óra',
+            title=str(cosz) + '. ➡ 📕',
+            message='Véget ért az óra',
             app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
@@ -51,161 +55,6 @@ def task(oraszam):
         )
         csongo(2)
         print("Siker!")
-    elif(oraszam == 2):
-        notification.notify(
-            title='🔔 ➡ 2.',
-            message='Becsengettek a második órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 3):
-        notification.notify(
-            title='2. ➡ 📕',
-            message='Véget ért a második óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 4):
-        notification.notify(
-            title='🔔 ➡ 3.',
-            message='Becsengettek a harmadik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 5):
-        notification.notify(
-            title='3. ➡ 📕',
-            message='Véget ért a harmadik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 6):
-        notification.notify(
-            title='🔔 ➡ 4.',
-            message='Becsengettek a negyedik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 7):
-        notification.notify(
-            title='4. ➡ 📕',
-            message='Véget ért a negyedik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 8):
-        notification.notify(
-            title='🔔 ➡ 5.',
-            message='Becsengettek az ötödik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 9):
-        notification.notify(
-            title='5. ➡ 📕',
-            message='Véget ért az ötödik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 10):
-        notification.notify(
-            title='🔔 ➡ 6.',
-            message='Becsengettek a hatodik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 11):
-        notification.notify(
-            title='6. ➡ 📕',
-            message='Véget ért a hatodik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 12):
-        notification.notify(
-            title='🔔 ➡ 7.',
-            message='Becsengettek a hetedik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 13):
-        notification.notify(
-            title='7. ➡ 📕',
-            message='Véget ért a hetedik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-    elif(oraszam == 14):
-        notification.notify(
-            title='🔔 ➡ 8.',
-            message='Becsengettek a nyolcadik órára',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(1)
-        print("Siker!")
-    elif(oraszam == 15):
-        notification.notify(
-            title='8. ➡ 📕',
-            message='Véget ért a nyolcadik óra',
-            app_name='Csengoapp',
-            app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
-            timeout=10,  # seconds
-            toast=False,
-        )
-        csongo(2)
-        print("Siker!")
-        sys.exit()
     else:
         schedule.clear('ertesites')
         sys.exit()
