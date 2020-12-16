@@ -25,7 +25,7 @@ def csongo(beki):
         elif(beki == 2):
             playsound("kicsongo.mp3")
     else:
-        print("becsongo.mp3 or kicsongo.mp3 is missing...")
+        print("becsongo.mp3 és kicsongo.mp3 hiányzik, ezért nem lesz hangos értesítés...")
 
 def task(oraszam):
     print("Ertesites es hang kuldese folyamatban...")
@@ -62,8 +62,8 @@ def task(oraszam):
 
 def main():
     x = datetime.datetime.now()
-    print("Started")
-    print("List of scheduled jobs:")
+    print("A program elindult")
+    print("Beütemezett értesítések:")
     if(calendar.weekday(x.year, x.month, x.day) >= 5):
         notification.notify(
             title='🔕 ➡ Ma nincsenek órák',
@@ -103,7 +103,7 @@ def main():
         schedule.run_pending()
         time.sleep(1)
 
-    print("Everything done! Shutting down...")
+    print("Minden beütemzett értesítésnek vége, a program leáll...")
 
 
 if __name__ == "__main__":
