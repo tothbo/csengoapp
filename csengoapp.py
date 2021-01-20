@@ -8,13 +8,16 @@ import calendar
 import os.path
 import sys
 
-file = open('timetable.txt', 'r')
+file = open('timetable.txt', 'r',encoding='utf8')
 times = file.readlines()
 adatbazis = []
+oranevek = []
 
 for x in times:
-    a = x.rstrip("\n")
+    a = x.rstrip("\n").split(" ")[1]
+    oranev = x.rstrip("\n").split(" ")[0]
     adatbazis.append(a)
+    oranevek.append(oranev)
 
 print(adatbazis)
 
@@ -34,7 +37,7 @@ def task(oraszam):
         cosz = int(((oraszam) / 2) + 1)
         notification.notify(
             title='🔔 ➡ ' + str(cosz) + '.',
-            message='Becsengettek az órára',
+            message=f"Becsengettek a/az {oranevek[oraszam]} órára",
             app_name='Csengoapp',
             app_icon='icon.ico',  # e.g. 'C:\\icon_32x32.ico'
             timeout=10,  # seconds
