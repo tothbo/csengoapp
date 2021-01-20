@@ -25,3 +25,20 @@ Ezek mellett érdemes a bgcsengoapp.pyw fájl hozzáadni induláshoz.
 
 Minden jog fenntartva, még az is ami nem létezik.
 #csengoapp, #csengoappsquad
+
+# Timetable.txt formátuma
+
+A timetable.txt ben tudod megadni a (még mai) órákat.
+A fájlban egy órát két sor határot meg:
+
+1. Az első sor egy óranévből és, egy szóközzel elválasztva, egy becsöngetése időpontból áll.
+2. A második sor egy kicsöngetése időpontból áll.
+
+Pl.:
+
+Matek 13:00
+13:40
+
+Az időpont formátuma : ÓÓ:PP (Ó = Óra, P=Perc)
+
+
