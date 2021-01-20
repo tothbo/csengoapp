@@ -37,6 +37,7 @@ A fájlban egy órát két sor határot meg:
 Pl.:
 
 Matek 13:00
+
 13:40
 
 Az időpont formátuma : ÓÓ:PP (Ó = Óra, P=Perc)
